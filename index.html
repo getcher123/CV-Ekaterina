@@ -1,160 +1,238 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Екатерина Орлихина - CV лендинг</title>
-  <meta name="description" content="CV-лендинг Екатерины Орлихиной: управление продуктовым портфелем и брендовой архитектурой.">
-  <meta property="og:title" content="Екатерина Орлихина - CV лендинг">
-  <meta property="og:description" content="Опыт, образование и контакты Екатерины Орлихиной.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="index.html">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/site.css">
-  <script defer src="assets/site.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Екатерина Орлихина - резюме</title>
+  <meta name="description" content="CV-лендинг Екатерины Орлихиной: управление продуктовым портфелем и брендовой архитектурой, опыт, образование и контакты." />
+  <meta property="og:title" content="Екатерина Орлихина - резюме" />
+  <meta property="og:description" content="Опыт, образование и контакты Екатерины Орлихиной." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="IMG_1844.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "primary-dark": "#0b5cb5",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "sidebar-bg": "#ffffff"
+          },
+          fontFamily: {
+            "display": ["Inter", "sans-serif"],
+            "body": ["Inter", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "md": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #f6f7f8;
+    }
+    @media print {
+      body {
+        background-color: white;
+      }
+      .no-print {
+        display: none;
+      }
+      .print-break-inside {
+        break-inside: avoid;
+      }
+    }
+  </style>
 </head>
-<body data-page="home">
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="site-brand ui-link" href="index.html" aria-label="На главную">
-        <span class="site-brand__mark">EO</span>
-        <span class="site-brand__text">CV Екатерины Орлихиной</span>
-      </a>
-      <button
-        type="button"
-        class="ui-icon-btn site-menu-button"
-        data-menu-button
-        aria-expanded="false"
-        aria-controls="site-menu"
-        aria-label="Открыть меню навигации"
-      >
-        <span class="site-menu-button__line"></span>
-        <span class="site-menu-button__line"></span>
-        <span class="site-menu-button__line"></span>
-      </button>
-      <nav id="site-menu" class="site-menu hidden" data-menu>
-        <a class="ui-nav-link" data-nav="about" href="#about">О себе</a>
-        <a class="ui-nav-link" data-nav="education" href="#education">Образование</a>
-        <a class="ui-nav-link" data-nav="contacts" href="#contacts">Контакты</a>
-        <a class="ui-nav-link" data-nav="experience" href="#experience">Опыт</a>
-      </nav>
-    </div>
+<body class="bg-background-light text-slate-900 antialiased min-h-screen flex justify-center py-8 px-4 sm:px-8 print:p-0 print:block">
+  <header class="sr-only">
+    <p>Резюме Екатерины Орлихиной</p>
   </header>
 
-  <main class="container cv-layout">
-    <aside class="cv-sidebar">
-      <section class="card profile-card">
-        <img
-          class="profile-photo"
-          src="IMG_1844.jpg"
-          alt="Екатерина Орлихина"
-        >
-        <h1 class="profile-name">ЕКАТЕРИНА ОРЛИХИНА</h1>
-        <p class="profile-role">Управление продуктовым портфелем и брендовой архитектурой</p>
-        <p class="profile-meta">
-          <span class="profile-meta__label">Дата рождения</span>
-          <span class="profile-meta__value">04/03/1986</span>
-        </p>
+  <main class="max-w-[1100px] w-full bg-white shadow-xl rounded-xl overflow-hidden print:shadow-none print:rounded-none flex flex-col md:flex-row print:flex-row min-h-[1000px]">
+    <aside class="w-full md:w-[320px] lg:w-[360px] bg-slate-50 print:bg-slate-50 border-r border-slate-100 flex-shrink-0 p-8 flex flex-col gap-8 print:w-[30%]">
+      <section class="flex flex-col items-start gap-5">
+        <img class="h-40 w-40 rounded-lg object-cover shadow-md bg-slate-200" src="IMG_1844.jpg" alt="Портрет Екатерины Орлихиной" />
+        <div class="flex flex-col gap-2">
+          <h1 class="text-2xl font-bold tracking-tight text-slate-900 uppercase leading-tight">ЕКАТЕРИНА<br />ОРЛИХИНА</h1>
+          <p class="text-slate-600 font-medium text-sm leading-relaxed">Управление продуктовым портфелем и брендовой архитектурой</p>
+          <div class="flex items-center gap-2 mt-1 text-slate-500 text-sm">
+            <span class="material-symbols-outlined text-[18px]">cake</span>
+            <span>04/03/1986</span>
+          </div>
+        </div>
       </section>
 
-      <section id="about" class="card card-block">
-        <h2 class="section-title">О себе</h2>
-        <ul class="plain-list">
-          <li>15+ лет опыта управления мультикатегорийными портфелями</li>
-          <li>Области экспертизы: стратегия развития брендов и портфеля, разработка и вывод продуктов на рынок, оптимизация портфеля, управление ценообразованием</li>
-          <li>Отраслевая экспертиза: Beauty&amp;Personal Care, Wellness: vitamins/supplements, sport nutrition, Energy Drinks, Home Care, FMCG</li>
-          <li>Подтвержденный трек-рекорд запуска 95+ продуктов, увеличения долей брендов и оптимизации P&amp;L</li>
-          <li>Английский язык - (C2) свободно владею</li>
-        </ul>
+      <hr class="border-slate-200" />
+
+      <section class="flex flex-col gap-4">
+        <h2 class="text-slate-900 font-bold uppercase tracking-wide text-sm flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">person</span>
+          О себе
+        </h2>
+        <div class="flex flex-col gap-4">
+          <div class="group">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Опыт</span>
+            <p class="text-slate-800 font-medium text-sm">15+ лет опыта управления мультикатегорийными портфелями</p>
+          </div>
+          <div class="group">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Области экспертизы</span>
+            <p class="text-slate-800 font-medium text-sm">Области экспертизы: стратегия развития брендов и портфеля, разработка и вывод продуктов на рынок, оптимизация портфеля, управление ценообразованием</p>
+          </div>
+          <div class="group">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Отраслевая экспертиза</span>
+            <p class="text-slate-800 font-medium text-sm">Отраслевая экспертиза: Beauty&amp;Personal Care, Wellness: vitamins/supplements, sport nutrition, Energy Drinks, Home Care, FMCG</p>
+          </div>
+          <div class="group">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Достижения</span>
+            <p class="text-slate-800 font-medium text-sm">Подтвержденный трек-рекорд запуска 95+ продуктов, увеличения долей брендов и оптимизации P&amp;L</p>
+          </div>
+          <div class="group">
+            <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-1">Язык</span>
+            <p class="text-slate-800 font-medium text-sm">Английский язык - (C2) свободно владею</p>
+          </div>
+        </div>
       </section>
 
-      <section id="education" class="card card-block">
-        <h2 class="section-title">Образование</h2>
-        <p class="education-name">Московский государственный университет сервиса</p>
-        <p class="education-meta">Бакалавр менеджмента, диплом с отличием</p>
+      <hr class="border-slate-200" />
+
+      <section class="flex flex-col gap-4">
+        <h2 class="text-slate-900 font-bold uppercase tracking-wide text-sm flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">school</span>
+          Образование
+        </h2>
+        <div>
+          <span class="text-xs font-semibold text-slate-400 block mb-1">Высшее образование</span>
+          <p class="text-slate-900 font-bold text-sm leading-tight mb-1">Московский государственный университет сервиса</p>
+          <p class="text-slate-600 text-sm leading-snug">Бакалавр менеджмента, диплом с отличием</p>
+        </div>
       </section>
 
-      <section id="contacts" class="card card-block">
-        <h2 class="section-title">Контакты</h2>
-        <ul class="contact-list">
-          <li>
-            <span class="contact-list__label">Телефон:</span>
-            <a class="ui-link" href="tel:+79260093674">+7 926 009 36 74</a>
+      <hr class="border-slate-200" />
+
+      <section class="flex flex-col gap-4">
+        <h2 class="text-slate-900 font-bold uppercase tracking-wide text-sm flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary">contact_page</span>
+          Контакты
+        </h2>
+        <ul class="flex flex-col gap-3">
+          <li class="flex flex-wrap items-center gap-3 text-sm text-slate-700 group">
+            <div class="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[16px]">call</span>
+            </div>
+            <a class="hover:text-primary transition-colors" href="tel:+79260093674">+7 926 009 36 74</a>
           </li>
-          <li>
-            <span class="contact-list__label">Email:</span>
-            <a class="ui-link" href="mailto:ekaterinaorlihina@gmail.com">ekaterinaorlihina@gmail.com</a>
+          <li class="flex flex-wrap items-center gap-3 text-sm text-slate-700 group">
+            <div class="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[16px]">mail</span>
+            </div>
+            <a class="hover:text-primary transition-colors break-all sm:break-normal" href="mailto:ekaterinaorlihina@gmail.com">ekaterinaorlihina@gmail.com</a>
           </li>
-          <li>
-            <span class="contact-list__label">LinkedIn:</span>
-            <a class="ui-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Профиль в Linkedin</a>
+          <li class="flex flex-wrap items-center gap-3 text-sm text-slate-700 group">
+            <div class="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-[16px]">link</span>
+            </div>
+            <a class="hover:text-primary transition-colors" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">Профиль в Linkedin</a>
           </li>
-          <li>
-            <span class="contact-list__label">Город:</span>
+          <li class="flex flex-wrap items-center gap-3 text-sm text-slate-700 group">
+            <div class="w-8 h-8 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-400">
+              <span class="material-symbols-outlined text-[16px]">location_on</span>
+            </div>
             <span>Москва</span>
           </li>
         </ul>
       </section>
     </aside>
 
-    <section id="experience" class="card cv-main">
-      <div class="section-head">
-        <h2>Опыт</h2>
+    <section class="flex-1 p-8 md:p-10 lg:p-12 bg-white print:w-[70%]">
+      <div class="flex items-center gap-4 mb-10">
+        <div class="h-10 w-2 bg-primary rounded-full"></div>
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Опыт</h2>
       </div>
 
-      <article class="experience-item">
-        <p><strong>Amway</strong> — глобальный лидер рынка прямых продаж, сфера Beauty/Wellness/HomeCare (100+ стран)</p>
-        <h3>Руководитель отдела продуктовой стратегии и управления брендами Amway Central Asia (уровень позиции CEO - 2)</h3>
-        <p class="experience-period">август 2023 – январь 2026</p>
-        <p>Управление брендами и продуктовым портфелем компании на мультисегментном рынке Central Asia (4 страны) в категориях:</p>
-        <ul>
-          <li>питание (витамины и БАД), энергетические напитки</li>
-          <li>красота (уход за кожей, декоративная косметика)</li>
-          <li>уход за домом (средства для уборки и стирки)</li>
-          <li>бытовая техника, посуда, системы очистки воды и воздуха</li>
-        </ul>
-        <p>Портфель: 9 глобальных брендов, 330+ SKU</p>
-        <p>Команда в управлении: 3 бренд-менеджера и 2 специалиста</p>
-        <p>Ключевые результаты и достижения:</p>
-        <ul>
-          <li>увеличила выручку портфеля на 7% с $111,3 млн до $119,5 млн за 2024-2025 гг.</li>
-          <li>оптимизировала SKU-базу с 400 до 330 позиций, повысив маржинальность на 2%</li>
-          <li>запустила 95 новых продуктов с долей в портфеле 47%</li>
-        </ul>
-      </article>
+      <div class="flex flex-col gap-10">
+        <article class="relative pl-8 border-l-2 border-slate-100 print-break-inside">
+          <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-primary border-4 border-white shadow-sm"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-xl font-bold text-slate-900">Руководитель отдела продуктовой стратегии и управления брендами Amway Central Asia (уровень позиции CEO - 2)</h3>
+            <span class="text-sm font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">август 2023 – январь 2026</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-primary font-semibold text-lg">Amway — глобальный лидер рынка прямых продаж, сфера Beauty/Wellness/HomeCare (100+ стран)</p>
+            <p class="text-slate-500 text-sm mt-1">Управление брендами и продуктовым портфелем компании на мультисегментном рынке Central Asia (4 страны) в категориях:</p>
+          </div>
+          <ul class="space-y-2 text-slate-700 text-sm leading-relaxed marker:text-primary list-disc list-outside ml-4">
+            <li>питание (витамины и БАД), энергетические напитки</li>
+            <li>красота (уход за кожей, декоративная косметика)</li>
+            <li>уход за домом (средства для уборки и стирки)</li>
+            <li>бытовая техника, посуда, системы очистки воды и воздуха</li>
+          </ul>
+          <p class="text-slate-700 text-sm mt-3">Портфель: 9 глобальных брендов, 330+ SKU</p>
+          <p class="text-slate-700 text-sm">Команда в управлении: 3 бренд-менеджера и 2 специалиста</p>
+          <p class="text-slate-700 text-sm mt-3 font-semibold">Ключевые результаты и достижения:</p>
+          <ul class="space-y-2 text-slate-700 text-sm leading-relaxed marker:text-primary list-disc list-outside ml-4 mt-2">
+            <li>увеличила выручку портфеля на 7% с $111,3 млн до $119,5 млн за 2024-2025 гг.</li>
+            <li>оптимизировала SKU-базу с 400 до 330 позиций, повысив маржинальность на 2%</li>
+            <li>запустила 95 новых продуктов с долей в портфеле 47%</li>
+          </ul>
+        </article>
 
-      <article class="experience-item">
-        <h3>Бренд-менеджер категории “Витамины и БАД/Энергетические напитки” Amway Russia &amp; Kazakhstan</h3>
-        <p class="experience-period">2017 – 2023</p>
-        <p>Полный цикл управления брендом XS Energy &amp; Sports Nutrition:</p>
-        <ul>
-          <li>запустила бренд с нуля: разработала позиционирование и go-to-market стратегию, запустила 12 SKU</li>
-          <li>достигла 6% доли бренда в портфеле за 6 лет, выведя XS в топ-3 категории по выручке внутри портфеля</li>
-        </ul>
-      </article>
+        <article class="relative pl-8 border-l-2 border-slate-100 print-break-inside">
+          <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-slate-300 border-4 border-white"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-lg font-bold text-slate-900">Бренд-менеджер категории “Витамины и БАД/Энергетические напитки” Amway Russia &amp; Kazakhstan</h3>
+            <span class="text-sm font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">2017 – 2023</span>
+          </div>
+          <p class="text-slate-700 text-sm mb-2">Полный цикл управления брендом XS Energy &amp; Sports Nutrition:</p>
+          <ul class="space-y-2 text-slate-700 text-sm leading-relaxed marker:text-slate-400 list-disc list-outside ml-4">
+            <li>запустила бренд с нуля: разработала позиционирование и go-to-market стратегию, запустила 12 SKU</li>
+            <li>достигла 6% доли бренда в портфеле за 6 лет, выведя XS в топ-3 категории по выручке внутри портфеля</li>
+          </ul>
+        </article>
 
-      <article class="experience-item">
-        <h3>Младший бренд-менеджер Amway Russia</h3>
-        <p class="experience-period">2010 – 2017</p>
-        <p>Запустила 50 новых SKU бренда витаминов и БАД Nutrilite (60% ассортимента) в России и Казахстане, провела 30+ тренингов для 5000+ дистрибьюторов, повысив качество знания продукта. Анализировала consumer insights: подготовила рекомендации по адаптации продуктов. Управляла бюджетом.</p>
-      </article>
+        <article class="relative pl-8 border-l-2 border-slate-100 print-break-inside">
+          <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-slate-300 border-4 border-white"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-lg font-bold text-slate-900">Младший бренд-менеджер Amway Russia</h3>
+            <span class="text-sm font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">2010 – 2017</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed">Запустила 50 новых SKU бренда витаминов и БАД Nutrilite (60% ассортимента) в России и Казахстане, провела 30+ тренингов для 5000+ дистрибьюторов, повысив качество знания продукта. Анализировала consumer insights: подготовила рекомендации по адаптации продуктов. Управляла бюджетом.</p>
+        </article>
 
-      <article class="experience-item experience-item--last">
-        <p><strong>MacCoffee</strong> — ведущий бренд растворимого кофе в России</p>
-        <h3>Персональный ассистент Директора по маркетингу</h3>
-        <p class="experience-period">2008 – 2010</p>
-        <p>Координировала запуск 2 крупных национальных кампаний (TB, digital, BTL). Оптимизировала процессы согласования, подготовила 50+ аналитических отчетов по performance кампаний (Nielsen)</p>
-      </article>
+        <article class="relative pl-8 border-l-2 border-transparent print-break-inside">
+          <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-slate-300 border-4 border-white"></div>
+          <p class="text-slate-700 font-semibold text-base mb-2">MacCoffee — ведущий бренд растворимого кофе в России</p>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-lg font-bold text-slate-900">Персональный ассистент Директора по маркетингу</h3>
+            <span class="text-sm font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">2008 – 2010</span>
+          </div>
+          <p class="text-slate-700 text-sm leading-relaxed">Координировала запуск 2 крупных национальных кампаний (TB, digital, BTL). Оптимизировала процессы согласования, подготовила 50+ аналитических отчетов по performance кампаний (Nielsen)</p>
+        </article>
+      </div>
+
+      <footer class="mt-16 pt-8 border-t border-slate-100 flex justify-between items-center text-slate-400 text-sm print:hidden">
+        <p>© 2026 Екатерина Орлихина</p>
+        <div class="flex gap-4">
+          <button type="button" class="hover:text-primary transition-colors" onclick="window.print()">Печать резюме</button>
+        </div>
+      </footer>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <p>© <span data-current-year>2026</span> Екатерина Орлихина</p>
-      <a class="ui-action-link" href="#experience">К опыту</a>
-    </div>
-  </footer>
 </body>
 </html>
